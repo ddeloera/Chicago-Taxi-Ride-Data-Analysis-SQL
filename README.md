@@ -178,3 +178,6 @@ ORDER BY
 .
 .
 .
+
+### ✅ Conclusion
+This SQL project demonstrates how to extract insights from real-world transportation data by using filtering, aggregation, conditional logic, and joins. The exercises highlight taxi behavior patterns, company performance, and the influence of weather and geography on urban mobility.
