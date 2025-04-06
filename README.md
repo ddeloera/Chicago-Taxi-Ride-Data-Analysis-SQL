@@ -43,3 +43,36 @@ GROUP BY
 ORDER BY 
     trips_amount DESC;
 
+![Screenshot](visuals/exercise-x.png)
+
+2️⃣ Rides by Companies with "Yellow" or "Blue" (Nov 1–7, 2017)
+
+#### 🔹 Objective
+Find ride volume for companies with "Yellow" or "Blue" in their name.
+
+#### 🔹 SQL Code
+SELECT
+    cabs.company_name AS company_name,
+    COUNT(trips.trip_id) AS trips_amount
+FROM 
+    trips
+    INNER JOIN cabs ON cabs.cab_id = trips.cab_id
+WHERE 
+    CAST(start_ts AS date) BETWEEN '2017-11-01' AND '2017-11-07'
+    AND cabs.company_name LIKE '%Yellow%'
+GROUP BY
+    company_name
+UNION
+SELECT
+    cabs.company_name AS company_name,
+    COUNT(trips.trip_id) AS trips_amount
+FROM 
+    trips
+    INNER JOIN cabs ON cabs.cab_id = trips.cab_id
+WHERE 
+    CAST(start_ts AS date) BETWEEN '2017-11-01' AND '2017-11-07'
+    AND cabs.company_name LIKE '%Blue%'
+GROUP BY
+    company_name;
+
+![Screenshot](visuals/exercise-x.png)
