@@ -25,6 +25,9 @@ For each exercise:
 
 ### 1️⃣ Ride Volume by Company (Nov 15–16, 2017)
 
+#### 🔹 Objective  
+Count the number of rides per company for a two-day period and sort by ride volume.
+
 #### 🔹 SQL Code
 ```sql
 SELECT
