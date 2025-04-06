@@ -45,7 +45,7 @@ ORDER BY
 
 ![Screenshot](visuals/exercise-x.png)
 
-2️⃣ Rides by Companies with "Yellow" or "Blue" (Nov 1–7, 2017)
+### 2️⃣ Rides by Companies with "Yellow" or "Blue" (Nov 1–7, 2017)
 
 #### 🔹 Objective
 Find ride volume for companies with "Yellow" or "Blue" in their name.
