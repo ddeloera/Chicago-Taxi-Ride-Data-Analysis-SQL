@@ -5,6 +5,53 @@ This project explores Chicago taxi trip data using SQL to answer real-world busi
 
 ---
 
+## 🗃️ Data Description
+
+This project is based on a database containing information on taxi rides in Chicago, including details on vehicles, trip activity, city neighborhoods, and weather conditions. Below is a breakdown of the tables used:
+
+---
+
+### 🏘️ `neighborhoods` table  
+Information about Chicago city neighborhoods.  
+- `neighborhood_id` – Unique identifier for the neighborhood  
+- `name` – Name of the neighborhood  
+
+---
+
+### 🚕 `cabs` table  
+Details on taxis and their associated companies.  
+- `cab_id` – Internal vehicle code  
+- `vehicle_id` – Technical vehicle ID  
+- `company_name` – Name of the taxi company  
+
+---
+
+### 📈 `trips` table  
+Contains individual ride details.  
+- `trip_id` – Unique trip identifier  
+- `cab_id` – Vehicle associated with the trip  
+- `start_ts` – Start date/time (rounded to the hour)  
+- `end_ts` – End date/time (rounded to the hour)  
+- `duration_seconds` – Length of the trip in seconds  
+- `distance_miles` – Distance of the trip in miles  
+- `pickup_location_id` – Pickup neighborhood (foreign key to `neighborhoods`)  
+- `dropoff_location_id` – Dropoff neighborhood (foreign key to `neighborhoods`)  
+
+---
+
+### 🌦️ `weather_records` table  
+Hourly weather condition data used for trip analysis.  
+- `record_id` – Unique weather record ID  
+- `ts` – Timestamp of the weather observation  
+- `temperature` – Recorded temperature (°F)  
+- `description` – Summary of weather (e.g. *light rain*, *scattered clouds*)  
+
+---
+
+### 🧱 Schema Preview  
+*(Click image to expand)*  
+![Table Schema](visuals/table-schema.png)
+
 ## 📊 Format  
 For each exercise:
 1. ✅ SQL code used to retrieve data  
