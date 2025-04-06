@@ -27,7 +27,7 @@ For each exercise:
 
 #### 🔹 SQL Code
 ```sql
-<!SELECT
+SELECT
     cabs.company_name,
     COUNT(trips.trip_id) AS trips_amount
 FROM 
@@ -38,5 +38,5 @@ WHERE
 GROUP BY
     cabs.company_name    
 ORDER BY 
-    trips_amount DESC;>
+    trips_amount DESC;
 
