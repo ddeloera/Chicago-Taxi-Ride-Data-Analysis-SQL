@@ -43,11 +43,11 @@ GROUP BY
 ORDER BY 
     trips_amount DESC;
 ```
-.
-.
-.
 
 ![Screenshot](visuals/exercise-1.png)
+.
+.
+.
 
 ### 2️⃣ Rides by Companies with "Yellow" or "Blue" (Nov 1–7, 2017)
 
@@ -83,9 +83,9 @@ GROUP BY
 ![Screenshot](visuals/exercise-2.png)
 
 
-###3️⃣ Popular vs. Other Companies (Nov 1–7, 2017)
+### 3️⃣ Popular vs. Other Companies (Nov 1–7, 2017)
 
-####🔹 Objective
+#### 🔹 Objective
 Compare ride volume for Flash Cab and Taxi Affiliation Services vs. all other companies grouped as "Other."
 
 #### 🔹 SQL Code
@@ -112,9 +112,9 @@ ORDER BY
 ```
 ![Screenshot](visuals/exercise-3.png)
 
-###4️⃣ Retrieve O'Hare and Loop Neighborhood IDs
+### 4️⃣ Retrieve O'Hare and Loop Neighborhood IDs
 
-####🔹 Objective
+#### 🔹 Objective
 Get neighborhood identifiers for Loop and O’Hare from the neighborhoods table.
 
 #### 🔹 SQL Code
@@ -128,9 +128,9 @@ WHERE
 ```
 ![Screenshot](visuals/exercise-4.png)
 
-###5️⃣ Categorize Weather Conditions
+### 5️⃣ Categorize Weather Conditions
 
-####🔹 Objective
+#### 🔹 Objective
 Group hourly weather data into “Good” and “Bad” conditions based on description content.
 
 #### 🔹 SQL Code
@@ -143,15 +143,15 @@ SELECT
 FROM 
     weather_records;
 ```
-.
-.
-.
 
 ![Screenshot](visuals/exercise-5.png)
+.
+.
+.
 
-###6️⃣ Saturday Rides from Loop to O’Hare + Weather
+### 6️⃣ Saturday Rides from Loop to O’Hare + Weather
 
-####🔹 Objective
+#### 🔹 Objective
 Retrieve rides from the Loop to O’Hare on Saturdays with corresponding weather conditions and trip durations.
 
 #### 🔹 SQL Code
@@ -173,8 +173,8 @@ WHERE
 ORDER BY 
     trips.trip_id;
 ```
-.
-.
-.
 
 ![Screenshot](visuals/exercise-6.png)
+.
+.
+.
