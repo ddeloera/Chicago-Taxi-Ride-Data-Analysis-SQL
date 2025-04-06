@@ -42,7 +42,7 @@ GROUP BY
     cabs.company_name    
 ORDER BY 
     trips_amount DESC;
-
+---
 ![Screenshot](visuals/exercise-x.png)
 
 ### 2️⃣ Rides by Companies with "Yellow" or "Blue" (Nov 1–7, 2017)
